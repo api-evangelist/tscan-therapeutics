@@ -1,8 +1,26 @@
 aid: tscan-therapeutics
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/tscan-therapeutics.png
 name: TScan Therapeutics
-description: 'TScan Therapeutics is a company surfaced as a portfolio company of bessemer-venture-partners,
-  gv and added to the API Evangelist network as a stub for enrichment. Sector: biotech. This profile is
-  a lead awaiting the enrichment pipeline.'
+description: 'TScan Therapeutics (Nasdaq: TCRX) is a clinical-stage biopharmaceutical company based in
+  Waltham, Massachusetts developing T-cell receptor engineered T-cell (TCR-T) therapies for the treatment
+  of patients with cancer. The company uses a high-throughput, genome-wide target-discovery platform to
+  identify the TCRs and antigen targets that drive T-cell recognition of tumors, building a multiplexed
+  library of TCR-T candidates (ImmunoBank) for both hematologic malignancies and solid tumors. Lead
+  programs TSC-100 and TSC-101 target minor histocompatibility antigens to prevent disease relapse after
+  allogeneic hematopoietic cell transplant. As a therapeutics company it exposes no public developer API
+  surface; this profile captures its identity and probed domain-security posture for the API Evangelist
+  network. Backed by Bessemer Venture Partners and GV.'
 url: https://raw.githubusercontent.com/api-evangelist/tscan-therapeutics/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,16 +31,30 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Biotech
+- Biopharmaceutical
+- Immunotherapy
+- Cell Therapy
+- Oncology
+- TCR-T
+- Clinical Stage
+- Life Sciences
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
 common:
+- type: DomainSecurity
+  url: security/tscan-therapeutics-domain-security.yml
 - type: Website
   url: https://www.tscan.com
